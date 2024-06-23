@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <!-- Favicons -->
+  <link href="https://caddeskhyderabad.com/wp-content/uploads/2023/07/cropped-desk.jpg" rel="icon">
+  <link href="https://caddeskhyderabad.com/wp-content/uploads/2023/07/cropped-desk.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    
+    li>button
+    {
+      margin: 7pt;
+     
+      color: #124265;
+      padding: 10pt;
+      height: 40pt;
+      width: 100pt;
+      border-radius: 20pt;
+      border: none;
+      
+    }
+    #btn1
+    {
+      background-image: linear-gradient(to bottom right, darkblue, white);
+      color: white;
+    }
+    #btn1:hover
+    {
+      background-image:none;
+      background-color: transparent;
+      border:1px solid #0099ff;
+      color:darkblue
+    }
+    #btn2
+    {
+   
+      background-image: linear-gradient(to right bottom, white, #0099ff);
+      color: white;
+    }
+    #btn2:hover{
+      background: none;
+      border: none;
+    }
+    .cont {
+  max-width: 350px;
+  background: #F8F9FD;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+  border-radius: 40px;
+  padding: 25px 35px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  margin: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(16, 137, 211);
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form .input {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.form .input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input:focus {
+  outline: none;
+  border-inline: 2px solid #12B1D1;
+}
+
+.form .forgot-password {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.form .forgot-password a {
+  font-size: 11px;
+  color: #0099ff;
+  text-decoration: none;
+}
+
+.form .login-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form .login-button:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.form .login-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.social-account-container {
+  margin-top: 25px;
+}
+
+.social-account-container .title {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(170, 170, 170);
+}
+
+.social-account-container .social-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-account-container .social-accounts .social-button {
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
+  border: 5px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 12px 10px -8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-account-container .social-accounts .social-button .svg {
+  fill: white;
+  margin: auto;
+}
+
+.social-account-container .social-accounts .social-button:hover {
+  transform: scale(1.2);
+}
+
+.social-account-container .social-accounts .social-button:active {
+  transform: scale(0.9);
+}
+
+.agreement {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.agreement a {
+  text-decoration: none;
+  color: #0099ff;
+  font-size: 9px;
+}
+/* modal 2 */
+.form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.title1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #00bfff;
+}
+
+.title1::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title1::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title1::before,
+.title1::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+.message1, 
+.signin1 {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin1 {
+  text-align: center;
+}
+
+.signin1 a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin1 a {
+  color: #00bfff;
+}
+
+.flex1 {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form1 label {
+  position: relative;
+}
+
+.form1 label .input1 {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form1 label .input1 + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form1 label .input1:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form1 label .input1:focus + span,
+.form1 label .input1:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input1 {
+  font-size: medium;
+}
+
+.submit1 {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+}
+
+.submit1:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+  </style>
+</head>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename"><img src="https://caddeskhyderabad.com/wp-content/uploads/2023/07/cropped-desk.jpg"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">AutoCad</a></li>
+              <li class="dropdown"><a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Java</a></li>
+                  <li><a href="#">Java Script</a></li>
+                  <li><a href="#">C++</a></li>
+                  <li><a href="#">.NET/C#</a></li>
+                  <li><a href="#">Ruby</a></li>
+                </ul>
+              </li>
+              <li><a href="#">3DS Max</a></li>
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Artifical Intelligence</a></li>
+              <li><a href="#">Android Development</a></li>
+              <li><a href="#">Software Development</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="btn1"  data-toggle="modal" data-target="#myModal">Log In</button></li>
+          <li><button id="btn2" data-toggle="modal" data-target="#myModa"> Sign Up</button></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    
+      
+
+
+    </div>
+  </header>
+  
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       <!-- univers.io -->
+       <div class="cont">
+        <div class="heading">Sign In</div>
+        <form action="" class="form">
+          <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+          <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+          <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
+          <input class="login-button" type="submit" value="Sign In">
+          
+        </form>
+        <div class="social-account-container">
+            <span class="title">Or Sign in with</span>
+            <div class="social-accounts">
+              <button class="social-button google">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 488 512">
+                  <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+                </svg></button>
+              <button class="social-button apple">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                </svg>
+              </button>
+              <button class="social-button twitter">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <span class="agreement"><a href="#">Learn user licence agreement</a></span>
+      </div>
+      <!-- univer.io end -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal2 -->
+<div id="myModa" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <center>
+        <form class="form1">
+          <p class="title1">Register </p>
+          <p class="message1">Signup now and get full access to our app. </p>
+              <div class="flex1">
+              <label>
+                  <input class="input1" type="text" placeholder="" required="">
+                  <span>Firstname</span>
+              </label>
+      
+              <label>
+                  <input class="input1" type="text" placeholder="" required="">
+                  <span>Lastname</span>
+              </label>
+          </div>  
+                  
+          <label>
+              <input class="input1" type="email" placeholder="" required="">
+              <span>Email</span>
+          </label> 
+              
+          <label>
+              <input class="input1" type="password" placeholder="" required="">
+              <span>Password</span>
+          </label>
+          <label>
+              <input class="input1" type="password" placeholder="" required="">
+              <span>Confirm password</span>
+          </label>
+          <button class="submit1">Submit</button>
+          <p class="signin1">Already have an acount ? <a href="#">Signin</a> </p>
+      </form>
+      </center>
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="https://www.arnesoncommunicates.com/uploads/1/0/5/0/10503253/learning_orig.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-out">
+          <div class="col-xl-7 col-lg-9 text-center">
+            <h1>CAD DESK</h1>
+            <p>CAD DESK provides professional software training on a vast array of courses in the fields of CAD, CAM and CAE.</p>
+          </div>
+        </div>
+        <div class="text-center" data-aos="zoom-out" data-aos-delay="100">
+          <a href="#about" class="btn-get-started">Read More.</a>
+        </div>
+
+        <div class="row gy-4 mt-5">
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+              <h4 class="title"><a href="">Experience</a></h4>
+              <p class="description">Since its founding in 2016, IT DESK has provided training to over 10 Thousands+ students.</p>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-person"></i></div>
+              <h4 class="title"><a href="">NO. OF STUDENTS</a></h4>
+              <p class="description">IT DESK has provided training to over 10 Thousands+ students</p>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-geo-alt"></i></div>
+              <h4 class="title"><a href="">WORLD WISE NO. OF FRANCHISE</a></h4>
+              <p class="description">IT DESK has expanded its network and become the topmost leading franchise network.
+                </p>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-command"></i></div>
+              <h4 class="title"><a href="">Our Vision</a></h4>
+              <p class="description"> Our training programs do not just focus on theoretical concepts, but its practical aspects fulfill the career objectives of the students as well as professionals.</p>
+            </div>
+          </div><!--End Icon Box -->
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>ABOUT IT DESK<br></h2>
+        <p>IT DESK has provided training to over 10 Thousands+ students and professionals of various countries</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Since its founding in 2016, IT DESK has provided training to over 10 Thousands+ students and professionals of various countries.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>100% Placement Guaranteed</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Live Projects</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Freindly Enviourment</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Interview Prepation</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>IT DESK provides professional software training on a vast array of courses in the fields of Computer Science and Information Technology. Since its founding in 2016, IT DESK has provided training to over 10 Thousands+ students and professionals of various countries.</p>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="400000" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Students</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p>COLLEGE/ CORPORATE TRAINING</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="170" data-purecounter-duration="1" class="purecounter"></span>
+              <p>TRAINING CENTRES</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="800" data-purecounter-duration="1" class="purecounter"></span>
+              <p>CCTP CERTIFIED INSTRUCTORS</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- About Alt Section -->
+    <section id="about-alt" class="about-alt section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://www.dreamhost.com/blog/wp-content/uploads/2022/09/About-Us-Page-Design-Examples-HERO-Image.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=CRf3MFRkOoE&t=4s" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Who We Are?</h3>
+            <p class="fst-italic">
+              CAD DESK provides professional software training on a vast array of courses in the fields of CAD, CAM and CAE. Since its founding in 2007, CAD DESK has provided training to over 1.5 Lakhs+ students and professionals of various countries.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>24×7 support system</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>
+                100% Placement Guaranteed</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>
+                Live Projects</span></li>
+            </ul>
+            <p>
+              Our Mission is to provide a world class training through innovative and futuristic approach which will enable students to become completely equipped professionals and helps them to make a positive impact in the global industrial scenario.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Alt Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNTEf_tvgr0LtvuXuT7sOmAjKVQUl4Xpzmnw&s" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://i.pinimg.com/originals/11/98/89/11988947940ce38ed4b1b2424d7d1178.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://i.pinimg.com/564x/05/97/4a/05974a4d1da1deac6470d2e87aa8c101.jpg" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyj2Q8qGmxmk8p-9tx5-J0UUHqdS4l6QNqGQ&s" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://i.pngimg.me/thumb/f/720/6562623969558528.jpg" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://www.stickerpress.in/media/products/800x800/7c15972b5af74d1d9f93845c4f854c75.jpg" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reviews from students</h2>
+        <p>STUDENT TESTIMONIAL</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" "="">
+            <p>
+              <i class=" bi bi-quote quote-icon-left"></i>
+                <span>IT DESK is a best CS and IT Training institute there are big basket of CS and IT courses. My overall experience was good. I recommended IT DESK to others for CS and IT courses...</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Rahul Sharma</h3>
+          
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I have applied for summer internship program on Web design .The way of teaching is excellent and always ready to clarify our doubts</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A very gud place to learn I liked python since I enrolled for those There are gud trainers who teach well, make things easy to understand, live sessions , interactive, overall a nice place to learn</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A very gud place to learn I liked python since I enrolled for those There are gud trainers who teach well, make things easy to understand, live sessions , interactive, overall a nice place to learn</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A very gud place to learn I liked python since I enrolled for those There are gud trainers who teach well, make things easy to understand, live sessions , interactive, overall a nice place to learn</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+  
+
+
+    <!-- Team Section -->
+    
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Founder & Managing Director</p>
+      </div><!-- End Section Title -->
+      
+      <div class="container">
+        
+
+        <div class="row gy-4">
+          
+       
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+           
+       
+           
+            <div class="team-member">
+              <div class="member-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ68ze2-RQPC3sYpBJ1eO-gmh6YXpi1vCLrrw&s" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>
+                  Mrs. Meena Agarwal </h4>
+                <span>Managing Director</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="https://media.licdn.com/dms/image/C5603AQEgjNCRzt8yJQ/profile-displayphoto-shrink_200_200/0/1617712157304?e=2147483647&v=beta&t=qHl_cFmmEu0St9iBPvWBiKLWOE4EXm1GGFkaCeDjuD0" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Late Mr. Ravindra Agarwal
+                  </h4>
+                <span>Founder, CAD DESK & IT DESK</span>
+              </div>
+            </div>
+          
+
+          
+
+        </div>
+
+      </div>
+      </div>
+ 
+
+    </section><!-- /Team Section -->
+  
+
+   
+
+   
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56938.74546728747!2d75.72324444863284!3d26.88217320000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db42f197258eb%3A0xbb7eca3021ab0d8c!2sCAD%20Desk%20-%20Autocad%20Training%20Institutes%20in%20Jaipur!5e0!3m2!1sen!2sin!4v1718977519767!5m2!1sen!2sin" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>1st Floor, Pink Tower, Tonk Rd, Opp. Nehru Garden, Lalkothi, Jaipur, Rajasthan 302015</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+917378123128</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Visit Our Website </h3>
+                <p>www.caddeskindia.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"><img src="https://caddeskhyderabad.com/wp-content/uploads/2023/07/cropped-desk.jpg"></span>
+          </a>
+          <p>CAD DESK provides professional software training on a vast array of courses in the fields of CAD, CAM and CAE.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>1st Floor, Pink Tower, Tonk Rd, Opp. Nehru Garden, Lalkothi</p>
+          <p> Jaipur, Rajasthan 302015</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+917378123128</span></p>
+          <p><strong>Email:</strong> <span>caddesk@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">OnePage</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">Aabid Shaikh</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
